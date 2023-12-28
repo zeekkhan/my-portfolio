@@ -1,0 +1,160 @@
+body {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./assest/joanna1.jpg");
+  background-attachment: fixed;
+  background-size: 1280px 1800px;
+  background-repeat: no-repeat;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  background-color: rgba(0, 0, 18, 0.96);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+#logo {
+  position: relative;
+  display: inline;
+}
+ul li {
+  display: inline;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  bottom: -6px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+li a:hover {
+  box-shadow: 0 12px 14px 0 rgba(12, 25, 145, 1);
+  border: 1px solid rgba(12, 25, 145, 0.7);
+  border-radius: 4px;
+  color: lightblue;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.home_1 {
+  color: white;
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+  background-image: url("./assest/kelly.jpg");
+  background-size: 1000px 450px;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 450px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+  box-shadow: 0 12px 16px 0 lightgreen, 0 6px 20px 0 lightgreen;
+  color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* On screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: rgba(0, 0, 18, 0.96);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+  
+}
+li .icon {
+  display: none;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  
+}
+@media screen and (max-width: 600px) {
+  li a:not(:first-child) {display: none;}
+  li a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul>li.responsive {position: relative;}
+  ul>li.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul>li.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
