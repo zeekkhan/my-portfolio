@@ -25,7 +25,7 @@
           <img src="./assest/R__1_-removebg-preview.png" width="100px" height="80px"/>
       </h1>  
       <ul id="nav justify-content-end" class="myTopnav">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -40,9 +40,9 @@
 
     <home id="home">
       <div class="home_1">
-        <h1>Aziz Ur Rahman</h1>
+        <h1 id="myname">Aziz Ur Rahman</h1>
         <h2>Front-End Developer</h2>
-        <p>
+        <p class="intro">
           Empowering your digital presence, I am a Professional Web Developer
           dedicated to crafting robust and user-centric web solutions
         </p>
@@ -55,13 +55,13 @@
     <!-- about section -->
 
     <about id="about">
-      <h2>About</h2>
       <img
         src="./assest/me.png"
         width="240px"
         height="400px"
       />
       <h2>About Me!</h2>
+      <div class="container-left">
       <p>
         Bringing two years of expertise in web design and front-end development,
         I am committed to crafting user-centric and visually appealing websites.
@@ -106,6 +106,8 @@
           
         </button> -->
       </p>
+      </div>
+      
       <div class="row">
         <div class="col">
           <div class="collapse multi-collapse" id="multiCollapseExample1">
@@ -222,6 +224,7 @@
 
       <div class="container">
         <form action="../">
+          <div class="shw">
           <label for="fname">First Name</label>
           <input
             type="text"
@@ -229,7 +232,8 @@
             name="firstname"
             placeholder="Your name.."
           />
-
+        </div>
+        <div class="shw" >
           <label for="lname">Last Name</label>
           <input
             type="text"
@@ -237,7 +241,8 @@
             name="lastname"
             placeholder="Your last name.."
           />
-
+        </div>
+        <div class="shw">
           <label for="country">Country</label>
           <select id="country" name="country">
             <option value="Afghanistan">Afghanistan</option>
@@ -440,7 +445,8 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
-
+        </div>
+        <div class="shw">
           <label for="subject">Subject</label>
           <textarea
             id="subject"
@@ -448,8 +454,10 @@
             placeholder="Write something.."
             style="height: 200px"
           ></textarea>
-
+        </div>
+        <div class="shw">
           <input type="submit" value="Submit" />
+        </div>
         </form>
       </div>
     </contact>
@@ -474,7 +482,7 @@
   function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "nav") {
-          x.className += " responsive";
+          x.className += "responsive";
         } else {
           x.className = "nav";
         }
