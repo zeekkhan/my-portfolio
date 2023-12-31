@@ -40,13 +40,13 @@
 
     <home id="home">
       <div class="home_1">
-        <h1 id="myname">Aziz Ur Rahman</h1>
+        <h1 class="myname">Aziz Ur Rahman</h1>
         <h2>Front-End Developer</h2>
         <p class="intro">
           Empowering your digital presence, I am a Professional Web Developer
           dedicated to crafting robust and user-centric web solutions
         </p>
-        <button class="btn btn-outline-success">
+        <button class="btn">
           <a href="">Download-CV</a>
         </button>
       </div>
@@ -55,15 +55,16 @@
     <!-- about section -->
 
     <about id="about">
-      <img
+      <div class="abt">
+        <img
         src="./assest/me.png"
         width="240px"
         height="400px"
-      />
-      <h2>About Me!</h2>
-      <div class="container-left">
-      <p>
-        Bringing two years of expertise in web design and front-end development,
+        />
+        <div class="container-left">
+          <h2 class="abtme">About Me!</h2>
+          <p>
+            Bringing two years of expertise in web design and front-end development,
         I am committed to crafting user-centric and visually appealing websites.
         Proficient in responsive design and web development, my focus is on
         optimizing website performance to deliver an exceptional user
@@ -75,81 +76,41 @@
         surpasses your goals. Let’s embark on this digital journey together, and
         create something extraordinary!
       </p>
-      <p class="d-inline-flex gap-1">
-        <a
-          class="btn btn-primary"
-          data-bs-toggle="collapse"
-          href="#multiCollapseExample1"
-          role="button"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample1"
-          >Skills</a
-        >
-        <button
-          class="btn btn-primary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#multiCollapseExample2"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample2"
-        >
-          Experience
-        </button>
-        <!-- <button
-          class="btn btn-primary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target=".multi-collapse"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample1 multiCollapseExample2"
-        >
-          
-        </button> -->
-      </p>
-      </div>
-      
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              <skills>
-                <ul>
-                  <li>Front-End Developer</li>
-                  <li>HTML5 And CSS3</li>
-                  <li>JavaScript</li>
-                  <li>Typescript</li>
-                  <li>Next.js</li>
-                  <li>Tailwind CSS and Bootstrap</li>
-                  <li>Amazon Wholesale FBA and other Local E-Commerce</li>
-                </ul>
-              </skills>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-              <experirnces>
-                <ul>
-                  <li>1 Year Experience in Web development</li>
-                  <li>More than 2 years of experience in other E-Commerce</li>
-                  <li>More than 1 year experience Computer Managements.</li>
-                  <li>2 year experience in Amazon Wholesale Fba in US.</li>
-                  <li>
-                    6 months experience of professional video editing. (Adobe
-                    After Effects, Filmora, and others.)
-                  </li>
-                </ul>
-              </experirnces>
-            </div>
-          </div>
-        </div>
-      </div>
-    </about>
+    </div>
+  </div>
+  <div class="skills">
+    <div class="skl">
+    <h2 class="skil" id="sk">Skills</h2>
+    <ol class="skil">
+      <li>Front-End Developer</li>
+      <li>HTML5 And CSS3</li>
+      <li>JavaScript</li>
+      <li>Typescript</li>
+      <li>Next.js</li>
+      <li>Tailwind CSS and Bootstrap</li>
+      <li>Amazon Wholesale FBA and other Local E-Commerce</li>
+    </ol>
+  </div>
+  <div class="exp">
+    <h2 class="expc" id="ex">Experience</h2>
+    <ol class="expc">
+      <li>1 Year Experience in Web development</li>
+      <li>More than 2 years of experience in other E-Commerce</li>
+      <li>More than 1 year experience Computer Managements.</li>
+      <li>2 year experience in Amazon Wholesale Fba in US.</li>
+      <li>
+        6 months experience of professional video editing. <br> (Adobe
+        After Effects, Filmora, and others.)
+      </li>
+    </ol>
+  </div>
+</div>
+  </about>
     <!-- services  -->
 
-    <services id="services">
-      <h2>Services</h2>
+    <!-- <div class="svr"></div> -->
+    <section id="services">
+      <h2 id="sr">Services</h2>
       <div id="service1">
         <img src="./assest/portfolio.jpeg" alt="" />
         <h2>Portfolio Websites</h2>
@@ -204,7 +165,8 @@
           </p>
         </details>
       </div>
-    </services>
+    
+    </section>
     <!-- portfolio -->
     <portfolio id="portfolio">
       <h2>Portfolio</h2>

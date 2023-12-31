@@ -5,14 +5,16 @@ body {
   min-height: 100vh;
   background-image: url("./assest/joanna1.jpg");
   background-attachment: fixed;
-  background-size: 1280px 1800px;
+  /* background-size: 1280px 1800px; */
+  background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 }
 * {
   box-sizing: border-box;
 }
 .header {
-  background-color: rgba(0, 0, 18, 0.96);
+  background-color: rgba(20, 20, 67, 0.96);
   position: fixed;
   top: 0;
   left: 0;
@@ -65,6 +67,31 @@ box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
 .btn a {
   text-decoration: none;
   color: white;
+  position: relative;
+}
+.btn a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  bottom: -6px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.btn a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btn a:hover {
+  /* box-shadow: 0 12px 14px 0 rgba(12, 25, 145, 1); */
+box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
+  border: 1px solid rgba(12, 25, 145, 0.7);
+  border-radius: 4px;
+  color: lightblue;
 }
 .home_1 {
   color: white;
@@ -87,6 +114,7 @@ div>h1{
   font-size: xx-large;
 }
 div>h2{
+  margin-left: -60px;
   padding: 20px;
   font-size: xx-large;
 }
@@ -95,25 +123,194 @@ p.intro{
   text-align: center;
   padding-left: 300px;
 }
+.abt{
+  color: white;
+  margin-top: 100px;
+  align-items: left;
+  text-align: left;
+  background-image: url("./assest/kelly.jpg");
+  background-size: 1000px 450px;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 450px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 about>img{
   margin-left: 0px;
   display: flex;
 }
-about>h2{
-  margin-top: -100px;
+#ab>h2{
+  text-align: center;
+  margin-top: -400px;
   color: white;
 }
+
 .container-left{
-  margin-top: -300px;
+  margin-top: 30px;
   float: inline-end;
   /* padding-right: 200px; */
   /* text-align: right; */
   /* display: flex; */
-  max-width: 800px;
+  max-width: 600px;
   color: white;
   flex-wrap: wrap;
 }
+.skills{
+  color: white;
+  margin-top: 100px;
+  align-items: left;
+  text-align: left;
+  background-image: url("./assest/kelly.jpg");
+  background-size: 1000px 450px;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 450px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.skl{
+  margin-top: 30px;
+  margin-left: 140px;
+}
+#sk{
+  background-size: cover;
+  width: 150px;
+}
+#sk::after {
+  content: "";
+  position: absolute;
+  left: 215px;
+  background: #fff;
+  width: 150px;
+  height: 3px;
+  bottom: -722px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+#sk:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#sk:hover {
+  /* box-shadow: 0 12px 14px 0 rgba(12, 25, 145, 1); */
+box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
+  border: 1px solid rgba(12, 25, 145, 0.7);
+  border-radius: 4px;
+  color: lightblue;
+}
+.exp{
+  margin-top: -280px;
+  float: right;
+}
+#ex{
+  background-size: cover;
+  width: 200px;
+}
+#ex::after {
+  content: "";
+  position: absolute;
+  left: 655px;
+  background: #fff;
+  width: 200px;
+  height: 3px;
+  bottom: -712px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+#ex:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#ex:hover {
+  /* box-shadow: 0 12px 14px 0 rgba(12, 25, 145, 1); */
+box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
+  border: 1px solid rgba(12, 25, 145, 0.7);
+  border-radius: 4px;
+  color: lightblue;
+}
+#services{
+  /* display: flex; */
+  color: white;
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#sr{
+  background-size: cover;
+  width: 200px;
+  color: white;
+  /* float: right; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  /* padding: 30px; */
+  margin: 30px;
+ margin-left: auto;
+ margin-right: auto;
+  
+}
+#sr::after {
+  content: "";
+  position: absolute;
+  left: 535px;
+  /* right: 10px; */
+  background: #fff;
+  width: 200px;
+  height: 3px;
+  bottom: -1240px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+#sr:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#sr:hover {
+  /* box-shadow: 0 12px 14px 0 rgba(12, 25, 145, 1); */
+box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
+  border: 1px solid rgba(12, 25, 145, 0.7);
+  border-radius: 4px;
+  color: lightblue;
+}
+
+#service1{
+  display: block;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 3px 10px 12px 3px rga;
+  float: left;
+  text-align: left;
+  max-width: 400px;
+  /* margin-right: 20px; */
+}
+#service1 h2{
+  padding-left: 70px;
+}
+
+
 input[type="text"],
 select,
 textarea {
@@ -127,24 +324,37 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-.shw{
-  
-box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
-}
+/* .shw{ 
+box-shadow: 3px 8px 33px 8px rgb(234, 225, 225);
+} */
 
 input[type="submit"] {
-  background-color: blue;
+  /* background-color: blue; */
   color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  position: relative;
 }
 
-input[type="submit"]:hover {
-  background-color: blue; 
-box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
-  color: white;
+
+input[type="submit"]::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  bottom: -6px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+input[type="submit"]:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .container {
@@ -152,6 +362,43 @@ box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
   background-color: rgb(205, 204, 204);
   padding: 20px;
 }
+.card{
+
+  margin-left: 100px;
+  background-color: transparent;
+  color: white;
+  width: 300px;
+}
+.abtme{
+  background-size: cover;
+  width: 200px;
+}
+.abtme::after {
+  content: "";
+  position: absolute;
+  left: 470px;
+  background: #fff;
+  width: 200px;
+  height: 3px;
+  bottom: -180px;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.abtme:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.abtme:hover {
+  /* box-shadow: 0 12px 14px 0 rgba(12, 25, 145, 1); */
+box-shadow: 3px 8px 33px 8px rgba(12,25,145,1);
+  border: 1px solid rgba(12, 25, 145, 0.7);
+  border-radius: 4px;
+  color: lightblue;
+}
+
+
 /* On screens that are 992px or less*/
 @media screen and (max-width: 992px) {
   .header {
